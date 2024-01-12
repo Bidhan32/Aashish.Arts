@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+  
+ 
+.images-height {
+  height: 400px;
+  width: 100%; /* Adjust the minimum height as needed */
+}
+
+.zoom-card {
+  transition: transform 0.3s;
+}
+
+.zoom-card:hover {
+  transform: scale(1.1); /* Adjust the scale factor as needed for the desired zoom effect */
+}
+
+  /* Sidebar.css */
+
+#sidebar {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 100%;
+    background: #4e73df; /* Sidebar background color */
+    color: #fff; /* Text color */
+    transition: all 0.3s;
+  }
+  
+  #sidebar .sidebar-header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .components li{
+    padding: 5px 0;
+    border-bottom: 1px solid #47748b; /* Border color */
+    border-top:1px solid #47748b ;
+  }
+  .components li:hover{
+    color: blue;
+    background-color: rgba(157, 169, 181, 0.751);
+  }
+  
+  #sidebar ul p {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+  }
+  
+  #sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #fff;
+  }
+  
+  #sidebar ul li.active > a,
+  #sidebar a[aria-expanded="true"] {
+    color: #fff;
+    background: #5a88d0; /* Active link background color */
+  }
+  
+  #sidebar a[data-toggle="collapse"] {
+    position: relative;
+  }
+  
+  #sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    content: "\f0da"; /* FontAwesome chevron icon */
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  #sidebar .active a::after,
+  #sidebar a[aria-expanded="true"]::after {
+    content: "\f0d7"; /* FontAwesome chevron-down icon */
+  }
+  
+  
